@@ -38,9 +38,9 @@ public class MainActivity extends Activity {
 			final int Y = (int) event.getRawY();
 			switch (event.getAction() & MotionEvent.ACTION_MASK) {
 			case MotionEvent.ACTION_DOWN:
-				RelativeLayout.LayoutParams lParams = (RelativeLayout.LayoutParams) view.getLayoutParams();
-				Delta = X - lParams.leftMargin;
-				Delta1 = Y - lParams.topMargin;
+				RelativeLayout.LayoutParams Params = (RelativeLayout.LayoutParams) view.getLayoutParams();
+				Delta = X - Params.leftMargin;
+				Delta1 = Y - Params.topMargin;
 				break;
 			case MotionEvent.ACTION_UP:
 				break;
